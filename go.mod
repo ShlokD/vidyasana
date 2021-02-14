@@ -1,4 +1,4 @@
-module vidya-asana/hello
+module vidya-asana/main
 
 go 1.15
 

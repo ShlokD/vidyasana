@@ -1,1 +1,1 @@
-web: bin/vidya-asana
+web: bin/main
