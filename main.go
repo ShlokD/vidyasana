@@ -34,7 +34,7 @@ func connectToDb() (*mongo.Client, context.Context) {
 
 	return client, ctx
 }
-func handleIndex(c *gin.Context) {
+func handleCourse(c *gin.Context) {
 	client, ctx := connectToDb()
 	defer client.Disconnect(ctx)
 
@@ -60,7 +60,7 @@ func main() {
 	router := gin.New()
 	router.Use(gin.Logger())
 
-	router.GET("/", handleIndex)
+	router.GET("/course", handleCourse)
 
 	router.Run(":" + port)
 }
